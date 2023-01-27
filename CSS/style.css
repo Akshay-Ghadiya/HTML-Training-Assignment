@@ -15,8 +15,7 @@
   width: 576px;
   height: 576px;
   border-radius: 3000px;
-  background: transparent url("Images/hero-image.png") 0% 0% no-repeat
-    padding-box;
+  background: transparent url("Images/hero-image.png") 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 31px #0000000a;
   border: 20px solid #ffffff;
   opacity: 1;
@@ -40,8 +39,6 @@
   width: 500px;
   height: 50px;
   text-align: left;
-  font: normal normal 300 40px/47px Roboto;
-  letter-spacing: 0px;
   color: #3e3e3e;
   opacity: 1;
   position: absolute;
@@ -53,8 +50,6 @@
   width: 137px;
   height: 53px;
   text-align: left;
-  font: normal normal 900 40px/53px Roboto;
-  letter-spacing: 0px;
   color: #c8242f;
   opacity: 1;
 }
@@ -65,10 +60,7 @@
   width: 260px;
   height: 33px;
   text-align: left;
-  font: normal normal normal 25px/33px Roboto;
-  letter-spacing: 0px;
   color: #3e3e3e;
-  opacity: 1;
   position: absolute;
 }
 .box1 {
@@ -83,16 +75,11 @@
   position: absolute;
 }
 #user {
+
+  color: #adadad;
   margin-top: 14px;
   margin-left: 14px;
   margin-bottom: 14px;
-  width: 68px;
-  height: 20px;
-  text-align: left;
-  font: normal normal normal 15px/20px Roboto;
-  letter-spacing: 0px;
-  color: #adadad;
-  opacity: 1;
 }
 
 .box2 {
@@ -111,13 +98,7 @@
   margin-top: 14px;
   margin-left: 14px;
   margin-bottom: 14px;
-  width: 66px;
-  height: 20px;
-  text-align: left;
-  font: normal normal normal 15px/20px Roboto;
-  letter-spacing: 0px;
   color: #adadad;
-  opacity: 1;
 }
 
 .log {
@@ -349,10 +330,10 @@
   letter-spacing: 0px;
   color: #3e3e3e;
 }
-#user {
+#user-logo {
   position: absolute;
-  top: 210px;
-  left: 34px;
+  top: 222px;
+  left: 48px;
   width: 12px;
   height: 12px;
 }
@@ -657,8 +638,7 @@
   font-size: 12px;
 }
 #table{
-    max-width: 1217px;
-    max-height: 558px;
+    width: 93%;
     position: absolute;
     top: 88.13px;
     left: 40px;
@@ -668,6 +648,126 @@ th, td{
     padding: 13.15px;
     text-align: left;
 }
+th{
+    color: #ADADAD;
+}
+table, th, td{
+    border-bottom: solid 1px black;
+}
+#paid{
+    color: #3CDD5F;
+}
+#failed{
+    color: #FF4545;
+}
+#pending{
+  color: #bababa;
+}
+
+/* inner-page css */
 
 
-
+#body{
+  top: 0px;
+ left: 0px;
+width: 1560px;
+height: 1970px;
+position: relative;
+background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+.innerpagesidebar{
+  top: 80px;
+  left: 0px;
+  width: 242px;
+  height: 1890px;
+  position: absolute;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+#form {
+  position: absolute;
+  top: 182px;
+  left: 292px;
+  width: 1218px;
+  height: 1749px;
+  background: #FFFFFF 0% 0% no-repeat padding-box
+}
+#Ana{
+  color: #000000;
+  position: absolute;
+  top: 121px;
+  left: 290px;
+  font-size: 30px;
+}
+#onecolumn{
+  margin-top: 22.52px;
+  margin-left: 29px;
+  color: #3E3E3E;
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-group{
+  padding: 14.5px 30px 0px 30px;
+}
+.form-group-2{
+  padding:0px 30px 0px 30px;
+}
+.form-group-3{
+  padding:20px 30px 0px 30px;
+}
+#twocolumn{
+  margin-top: 44px;
+  margin-left: 29px;
+  color: #3E3E3E;
+  font-size: 25px;
+  font-weight: bold;
+}
+.row{
+  padding:15.98px 30.5px 0px 30.5px;
+}
+select:invalid{
+ color:  #ADADAD;
+}
+#threecolumn{
+  margin-top: 44px;
+  margin-left: 29px;
+  color: #3E3E3E;
+  font-size: 25px;
+  font-weight: bold;
+}
+#iuser{
+  border: 1px dashed #ADADAD;
+}
+#fourcolumn{
+  margin-top: 44px;
+  margin-left: 29px;
+  color: #3E3E3E;
+  font-size: 25px;
+  font-weight: bold;
+}
+#uiborder{
+  border: 1px solid #FF3B3B;
+}
+#uidesign{
+  color: #FF3B3B;
+}
+#otherdesign{
+  margin-top: 44px;
+  margin-left: 29px;
+  color: #3E3E3E;
+  font-size: 25px;
+  font-weight: bold;
+}
+#fileupload{
+  margin-top: 21.13px;
+  margin-left: 29px;
+  color: #3E3E3E;
+  font-size: 20px;
+  font-weight: bold;
+}
+#radio{
+  margin-top: 36.15px;
+  margin-left: 29px;
+  color: #3E3E3E;
+  font-size: 20px;
+  font-weight: bold;
+}
