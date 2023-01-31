@@ -1,197 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel="stylesheet" href="Css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="js/script.js"></script>
+  <title>Document</title>
 </head>
-
 <body>
-    <div class="dcontainer">
-        <div class="head">
-            <script src="js/script.js"></script>
-
-           <button type="button" onclick="popup()"><img src="Images\menu-bar.svg" id="menu-bar"></button> 
-            <img src="Images\logo.svg" alt="logo" id="company">
-            <img src="Images\search-icon.svg" alt="logo" id="search">
-            <div id="searchtxt">Search</div>
-            <img src="Images\notification-icon.svg" alt="bell" id="notification">
-            <img src="Images\profile.png" alt="profile" id="profile">
-            <div id="name">John doe</div>
-            <img src="Images\downward-arrow.svg" alt="aerrow" id="aerrow">
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-white header">
+    <div class="container-fluid hamberger">
+        <button  id="menu-bar" onclick="SideBar()" id=""><img src="images/menu-bar.svg" ></button>
+      <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="" class="logo"></a>
+      
+      <div id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="searchbox">
+                <img src="./images/search-icon.svg" alt="" class="searchimg">
+                <input type="text" name="search" class="form-control searchfield w-75 border-0" placeholder="  Search...">
+              </div>
+            </a>
+          </li> 
+          <div class="d-flex">
+          <img src="./images/profile.png" alt="" class="me-2 avatar mt-1">
+          <p class="profiname">John Doe</p>
+          </div>
+          <img src="./images/downward-arrow.svg" alt="" class="down">
         </div>
-        <div class="sidebar" id="sidebarr">
-            <div id="active"><img src="Images\dashboard-active.svg" alt="deshboard" id="dashboard">
-            <div id="dashtxt">Dashboard</div>
+      </div>
+    </div>
+  </nav>
+  <div class="board">
+    <div class="container-fluid">
+      <div class="row p-0">
+        <div class="col-lg-2 left" id="sidebarr">
+          <div class="sideboxes">
+            <div class="boxes1 ms-3">
+              <img src="./images/dashboard-active.svg" alt="" class="sideimg1 ms-1">
+              <p class="sidetext1 mt-3">Dashboard</p>
             </div>
-            <img src="Images\graph-default.svg" alt="graph" id="analysis">
-            <div id="anatxt">Analysis</div>
-            <img src="Images\inbox-default.svg" alt="menubar" id="inbox">
-            <div id="inbtxt">Inbox</div>
-            <img src="Images\clock-default.svg" alt="menubar" id="history">
-            <div id="histxt">History</div>
-            <img src="Images\user-default.svg" alt="menubar" id="user-logo">
-            <div id="usetxt">User</div>
-            <img src="Images\maintenance-default.svg" alt="menubar" id="Maintenance">
-            <div id="mentxt">Maintenance</div>
-            <img src="Images\setting-default.svg" alt="menubar" id="setting">
-            <div id="settxt">Setting</div>
+            <div class="boxes2 ms-3">
+              <img src="./images/graph-default.svg" alt="" class="sideimg2 ms-1">
+              <p class="sidetext2 mt-3">Analysis</p>
             </div>
-           
-            <div id="dash"><strong>Dashboard</strong></div>
-            <div id="newproduct">
-                <img src="Images\star.svg" alt="star" id="star">
-                <div id="newproducttxt"><span id="number1">23,456</span> <br>
-                <span>New Product</span></div>
+            <div class="boxes3 ms-3">
+              <img src="./images/inbox-default.svg" alt="" class="sideimg3 ms-1">
+              <p class="sidetext3 mt-3">Inbox</p>
             </div>
-            <div id="addedproduct">
-                <img src="Images\new-product.svg" alt="star" id="addproductlogo">
-                <div id="addedproducttxt"><span id="number2">2345</span> <br>
-                <span>Added Products</span></div>
+            <div class="boxes4 ms-3">
+              <img src="./images/clock-default.svg" alt="" class="sideimg4 ms-1">
+              <p class="sidetext4 mt-3">History</p>
             </div>
-            <div id="totalproduct">
-                <img src="Images\total-product.svg" alt="star" id="totalproductlogo">
-                <div id="totalproducttxt"><span id="number3">32,456</span> <br>
-                <span>Total Products</span></div>
+            <div class="boxes5 ms-3">
+              <img src="./images/user-default.svg" alt="" class="sideimg5 ms-1">
+              <p class="sidetext5 mt-3">Users</p>
             </div>
-            <div id="todaysale">
-                <img src="Images\dollar-filled.svg" alt="star" id="doller">
-                <div id="todaysaletxt"><span id="number4">5678</span> <br>
-                <span>Today's Sale</span></div>
+            <div class="boxes6 ms-3">
+              <img src="./images/maintenance-default.svg" alt="" class="sideimg6 ms-1">
+              <p class="sidetext6 mt-3">Maintenance</p>
             </div>
-            <div id="totalsale">
-                <img src="Images\money-bag.svg" alt="star" id="moneybag">
-                <div id="totalsaletxt"><span id="number5">33,5342</span> <br>
-                <span>Total Sale</span></div>
+            <div class="boxes7 ms-3">
+              <img src="./images/setting-default.svg" alt="" class="sideimg7 ms-1">
+              <p class="sidetext7 mt-3">Setting</p>
             </div>
-            <div id="Graph">
-            <div id="saletxt"> <span> Sale </span></div>
-            
-            <div ><span id="wtxt">Weekly &nbsp;&nbsp;&nbsp; Monthly</span>  <span id="ytxt">Yearly</span></div>
-
-
-            
-                <img src="images/data-graph.png" id="graph-image">
-            
+          </div>
+        </div>
+        <div class="col-lg-10 col-12 mt-5">
+          <h1 class="maintitle ms-5">Dashboard</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-md-2 col-sm-5 mx-auto" style="width: 220px;">
+                <div class="card mt-3">
+                  <div class="card-body row" style="height: 116px;">
+                    <div class="col-4">
+                      <img src="./images/star.svg" alt=""  class="mt-2">
+                    </div>
+                    <div class="col-8">
+                      <p  style="font-weight: bold;">23,456</p>
+                      <p style="font-size: 85%;">New Products</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-5 mx-auto" style="width: 220px;">
+                <div class="card mt-3">
+                  <div class="card-body row" style="height: 116px;">
+                    <div class="col-4">
+                      <img src="./images/new-product.svg" alt=""  class="mt-3">
+                    </div>
+                    <div class="col-8">
+                      <p  style="font-weight: bold;">2345</p>
+                      <p style="font-size: 85%;">Added Products</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-5 mx-auto" style="width: 220px;">
+                <div class="card mt-3">
+                  <div class="card-body row" style="height: 116px;">
+                    <div class="col-4">
+                      <img src="./images/total-product.svg" alt=""  class="mt-2">
+                    </div>
+                    <div class="col-8">
+                      <p  style="font-weight: bold;">32,456</p>
+                      <p style="font-size: 85%;">Total Products</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-5 mx-auto" style="width: 220px;">
+                <div class="card mt-3">
+                  <div class="card-body row" style="height:116px;">
+                    <div class="col-4">
+                      <img src="./images/dollar-filled.svg" alt=""  class="mt-2">
+                    </div>  
+                    <div class="col-8">
+                      <p  style="font-weight: bold;">5678</p>
+                      <p style="font-size: 85%;">Today's Sale</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 col-sm-5 mx-auto" style="width: 220px;">
+                <div class="card mt-3">
+                  <div class="card-body row" style="height: 116px;">
+                    <div class="col-4">
+                      <img src="./images/money-bag.svg" alt="" class="mt-2">
+                    </div>
+                    <div class="col-8">
+                      <p style="font-weight: bold;">33,5342</p>
+                      <p style="font-size: 85%;">Total Sale</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="pi-chart">
-                <span id="pi-head">Sales by Country</span>
-                <img src="images/pie-chart.svg" id="pi-chart-image">    
-                
-                <div><img src="images/radio-checked-icon.svg" id="us-logo"><span id="us-txt">United States of America</span></div>
-                <div><img src="images/radio-checked-icon.svg" id="canada-logo"><span id="canada-txt">Canada</span></div>
-                <div><img src="images/radio-checked-icon.svg" id="russia-logo"><span id="russia-txt">russia</span></div>
-                <div><img src="images/radio-checked-icon.svg" id="india-logo"><span id="india-txt">India</span></div>
-            
+          </div>
+          <div class="graphs container">
+            <div class="row">
+              <div class="col-lg-7 col-md-12 mt-5 mx-auto">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="chart1">
+                      <div class="chart1text d-flex">
+                        <p>Sale</p>
+                        <p class="ms-auto">Weekly</p>
+                        <p class="ms-2">Monthly</p>
+                        <p class="ms-2" style="color: #C8242F; text-decoration: underline;">Yearly</p>
+                      </div>
+                      <div class="chartimg1 mt-5">
+                        <img src="./images/data-graph.png" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-5 mx-auto">
+                <div class="card">
+                  <div class="card-body d-flex justify-content-center">
+                    <div class="chart2">
+                      <div class="charttitle">
+                        <h4>Sales by Country</h4>
+                      </div>
+                      <div class="chartimg2">
+                        <img src="./images/pie-chart.svg" class="img-fluid ms-3">
+                      </div>
+                      <div class="disc1 d-flex ms-4">
+                        <div class="dis1">
+                          <div class="dot1 mt-1"></div>
+                          <p class="ms-2 dottext">U.S.A</p>
+                        </div>
+                        <div class="dis2 ms-5">
+                          <div class="dot2 mt-1"></div>
+                          <p class="ms-2 dottext">Canada</p>
+                        </div>
+                      </div>
+                      <div class="disc2 d-flex ms-4">
+                        <div class="dis3">
+                          <div class="dot3 mt-1"></div>
+                          <p class="ms-2 dottext">Russia</p>
+                        </div>
+                        <div class="dis4 ms-5">
+                          <div class="dot4 mt-1"></div>
+                          <p class="ms-2 dottext">India</p>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="footer">
-
-                <span id="footer-head-rtxt">Invoices</span>
-                <span id="footer-head-ltxt">View All</span>
-
-                <table id="table">
-                    <thead id="table-head">
-                    <th >INVOICE</th>
-                    <th>COMPANY NAME</th>
-                    <th>EMAIL</th>
-                    <th>DUE DATE</th>
-                    <th>STATUS</th>
-                    <th>AMOUNT</th>
-                </thead>
-                    <tr id="row-one">
+          </div>
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-10 col-md-10">
+                <div class="table-responsive datatable mx-auto">
+                  <table class="table mx-auto w-75">
+                    <div class="tabletitle d-flex" style="margin-left: 10%;">
+                      <p>Invoice</p>
+                      <p style="margin-left: 75%; color: #C8242F; text-decoration: underline;"> View All</p>
+                    </div>
+                    <thead>
+                      <tr>
+                        <th>Invoice</th>
+                        <th>COMPANY NAME</th>
+                        <th>EMAIL</th>
+                        <th>DUE DATE</th>
+                        <th>STATUS</th>
+                        <th>AMOUNT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
                         <td>651535</td>
                         <td>Public Adjusting Firm</td>
                         <td>georgia.young@example.com</td>
                         <td>24 May, 2020</td>
-                        <td id="paid">Paid</td>
+                        <td>Paid</td>
                         <td>$47,800</td>
-                    </tr>
-
-                    <tr id="row-two">
+                      </tr>
+                      <tr>
                         <td>558612</td>
                         <td>Other</td>
                         <td>jessica.hanson@example.com</td>
                         <td>24 May, 2020</td>
-                        <td id="paid">Paid</td>
+                        <td>Paid</td>
                         <td>$98,000</td>
-                    </tr>
-
-                    <tr id="row-three">
+                      </tr>
+                      <tr>
                         <td>558612</td>
                         <td>Vendor</td>
                         <td>alma.lawson@example.com</td>
                         <td>8 Sep, 2020</td>
-                        <td id="paid">Paid</td>
+                        <td>Paid</td>
                         <td>$20,900</td>
-                    </tr>
-
-                    <tr id="row-four">
+                      </tr>
+                      <tr>
                         <td>558612</td>
                         <td>Property Management Company</td>
                         <td>kenzi.lawson@example.com</td>
                         <td>22 Oct, 2020</td>
-                        <td id="paid">Paid</td>
+                        <td>Paid</td>
                         <td>$10,570</td>
-                    </tr>
-
-                    <tr id="row-five">
+                      </tr>
+                      <tr>
                         <td>651535</td>
                         <td>Subcontractor Company</td>
                         <td>jackson.graham@example.com</td>
                         <td>1 Feb, 2020</td>
-                        <td id="failed">Failed</td>
+                        <td>Failed</td>
                         <td>$10,200</td>
-                    </tr>
-
-                    <tr id="row-six">
-                        <td>651535</td>
+                      </tr>
+                      <tr>
+                        <td>653518</td>
                         <td>Mortgage Company</td>
                         <td>felicia.reid@example.com</td>
                         <td>22 Oct, 2020</td>
-                        <td id="pending">Pending</td>
+                        <td>Pending</td>
                         <td>$12,600</td>
-                    </tr>
-
-                    <tr id="row-seven">
-                        <td>487431</td>
+                      </tr>
+                      <tr>
+                        <td>487441</td>
                         <td>TPA</td>
                         <td>dolores.chambers@example.com</td>
                         <td>21 Sep, 2020</td>
-                        <td id="paid">Paid</td>
+                        <td>Paid</td>
                         <td>$11,170</td>
-                    </tr>
-
-                    <tr id="row-eight">
+                      </tr>
+                      <tr>
                         <td>267400</td>
                         <td>Fire Department</td>
                         <td>nevaeh.simmons@example.com</td>
                         <td>17 Oct, 2020</td>
                         <td>Failed</td>
                         <td>$28,000</td>
-                    </tr>
-
-                    <tr id="row-nine">
+                      </tr>
+                      <tr>
                         <td>449003</td>
                         <td>Insurance Carrier</td>
                         <td>curtis.weaver@example.com</td>
                         <td>21 Sep, 2020</td>
-                        <td id="paid">Paid</td>
+                        <td>Paid</td>
                         <td>$10,000</td>
-                    </tr>
-
-
-                </table>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-lg-2"></div>
             </div>
+          </div>
 
+        </div>
+      </div>
     </div>
+  </div>
 
 </body>
-
 </html>
