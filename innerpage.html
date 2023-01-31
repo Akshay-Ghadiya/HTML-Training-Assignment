@@ -1,217 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Inner page</title>
-    <link rel="stylesheet" href="Css/style.css">
-</head>
-
-<body>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/innerpagestyle.css">
+    <script src="./Bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <script src="js/script.js"></script>
-
-    <div id="body">
-        <div class="head">
-
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white header">
+        <div class="container-fluid hamberger">
             <button  id="menu-bar" onclick="SideBar()" id=""><img src="images/menu-bar.svg" ></button>
-            <img src="Images\logo.svg" alt="logo" id="company">
-            <img src="Images\search-icon.svg" alt="logo" id="search">
-            <div id="searchtxt">Search</div>
-            <img src="Images\notification-icon.svg" alt="bell" id="notification">
-            <img src="Images\profile.png" alt="profile" id="profile">
-            <div id="name">John doe</div>
-            <img src="Images\downward-arrow.svg" alt="aerrow" id="aerrow">
-
-        </div>
-        <div class="innerpagesidebar" id="sidebarr">
-            <div id="active"><img src="Images\dashboard-active.svg" alt="deshboard" id="dashboard">
-                <div id="dashtxt">Dashboard</div>
+          <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="" class="logo"></a>
+          
+          <div id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="searchbox">
+                    <img src="./images/search-icon.svg" alt="" class="searchimg">
+                    <input type="text" name="search" class="form-control searchfield w-75 border-0" placeholder="  Search...">
+                  </div>
+                </a>
+              </li> 
+              <div class="d-flex">
+              <img src="./images/profile.png" alt="" class="me-2 avatar mt-1">
+              <p class="profiname">John Doe</p>
+              </div>
+              <img src="./images/downward-arrow.svg" alt="" class="down">
             </div>
-            <img src="Images\graph-default.svg" alt="graph" id="analysis">
-            <div id="anatxt">Analysis</div>
-            <img src="Images\inbox-default.svg" alt="menubar" id="inbox">
-            <div id="inbtxt">Inbox</div>
-            <img src="Images\clock-default.svg" alt="menubar" id="history">
-            <div id="histxt">History</div>
-            <img src="Images\user-default.svg" alt="menubar" id="user-logo">
-            <div id="usetxt">User</div>
-            <img src="Images\maintenance-default.svg" alt="menubar" id="Maintenance">
-            <div id="mentxt">Maintenance</div>
-            <img src="Images\setting-default.svg" alt="menubar" id="setting">
-            <div id="settxt">Setting</div>
+          </div>
         </div>
-        <div id="Ana"><strong>Analysis</strong></div>
-
-        <div id="form">
-            <div id="onecolumn"><span>One Column</span></div>
-            <form>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+      </nav>
+      <div class="board">
+        <div class="container-fluid">
+          <div class="row p-0">
+            <div class="col-lg-2 p-0 left" id="sidebarr">
+              <div class="sideboxes">
+                <div class="boxes1 ms-3">
+                  <img src="./images/dashboard-active.svg" alt="" class="sideimg1 ms-1">
+                  <p class="sidetext1 mt-3">Dashboard</p>
                 </div>
-                <div class="form-group-2">
-                    <select class="form-control" required>
-                        <option selected value="">Dropdown</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
+                <div class="boxes2 ms-3">
+                  <img src="./images/graph-default.svg" alt="" class="sideimg2 ms-1">
+                  <p class="sidetext2 mt-3">Analysis</p>
                 </div>
-                <div class="form-group-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                        placeholder="Multiple line"></textarea>
+                <div class="boxes3 ms-3">
+                  <img src="./images/inbox-default.svg" alt="" class="sideimg3 ms-1">
+                  <p class="sidetext3 mt-3">Inbox</p>
                 </div>
-            </form>     
-            <div id="twocolumn"><span>Two Column</span></div>
-
-            <form>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder=" Name">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" value="johndoe">
-                    </div>
+                <div class="boxes4 ms-3">
+                  <img src="./images/clock-default.svg" alt="" class="sideimg4 ms-1">
+                  <p class="sidetext4 mt-3">History</p>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="col">
-                        <select class="form-control" required>
-                            <option selected value="">Dropdown</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
+                <div class="boxes5 ms-3">
+                  <img src="./images/user-default.svg" alt="" class="sideimg5 ms-1">
+                  <p class="sidetext5 mt-3">Users</p>
                 </div>
-            </form>
-            <div id="threecolumn"><span>Three Column</span></div>
-            <form>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col">
-                        <input type="password" class="form-control" value=".........">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" value="johndoe" id="iuser">
-                    </div>
+                <div class="boxes6 ms-3">
+                  <img src="./images/maintenance-default.svg" alt="" class="sideimg6 ms-1">
+                  <p class="sidetext6 mt-3">Maintenance</p>
                 </div>
-            </form>
-            <div id="fourcolumn"><span>Four Column</span></div>
-            <form>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" value="UI designer" id="uiborder">
-                        <small id="uidesign">Enter Valid Data</small>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Name">
-                        <small class="form-text text-muted">Enter your full name as per ID</small>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" value="johndoe">
-                    </div>
-                    <div class="col">
-                        <select class="form-control" required>
-                            <option selected value="">Select</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
+                <div class="boxes7 ms-3">
+                  <img src="./images/setting-default.svg" alt="" class="sideimg7 ms-1">
+                  <p class="sidetext7 mt-3">Setting</p>
                 </div>
-            </form>
-            <div id="otherdesign"><span>Other Design Elements</span></div>
-            <div id="fileupload"><span>File Upload</span></div>
-            <form>
-                <div class="form-group">
-                  <input type="file" class="form-control-file" id="exampleFormControlFile1" >
-                </div>
-              </form>
-              <div id="radio"><span>Radio Button</span></div>
-
-              <form class="form-group">
-
-                <div >
-                <span id="option-1"><input type="radio" name="option 1" > option 1</span>
-                <span id="option-2"><input type="radio" name="option 2" checked  style="background-color: red;" > option 2</span>
-
+              </div>
             </div>
-              </form>
+        <div class="col-lg-10 col-12">
+            <h1>Analysis</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 forms">
+                        <div class="form1 mt-3">
+                            <h5>One Column</h5>
+                            <form class="form-group">
+                                <input type="text" class="form-control ingrp" placeholder="Name">
+                                <select class="form-control mt-3">
+                                    <option value="Dropdown">Dropdown</option>
+                                </select>
+                                <textarea class="form-control mt-3" rows="3"></textarea>
+                            </form>
+                        </div>
+                        <div class="form2 mt-3">
+                            <h5>two column</h5>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <form class="form-group">
+                                            <input type="text" class="form-control ingrp" placeholder="Name">
+                                            <input type="password" class="form-control mt-3" placeholder="Password">
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <form class="form-group">
+                                            <input type="text" class="form-control ingrp">
+                                            <select class="form-control mt-3">
+                                                <option value="Dropdown">Dropdown</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form3 mt-3">
+                            <h5>Three Column</h5>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <form class="form-group">
+                                            <input type="text" class="form-control ingrp">
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <form class="form-group">
+                                            <input type="text" class="form-control ingrp">
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <form class="form-group">
+                                            <input type="text" class="form-control ingrp">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form4 mt-3">
+                            <h5>Four Column</h5>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <input type="text" class="form-control ingrp">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="text" class="form-control ingrp">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="text" class="form-control ingrp">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <select class="form-control ingrp">
+                                            <option value="Select">Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form5 mt-3">
+                            <h5>Other Design Elements</h5>
+                            <h6 class="mt-3">File Upload</h6>
+                            <div class="upload d-flex">
+                                <div class="uploadbtn d-flex ms-4">
+                                    <img src="./images/cloud-upload-icon.svg" alt="" class="w-25 ms-2">
+                                    <h6 class="mt-2 ms-1 me-3">Upload</h6>
+                                </div>
+                                <p class="mt-2 ms-5">No Item Selected</p>
+                            </div>
+                            <h6 class="mt-3">Radio Button</h6>
+                            <div class="radios">
+                                <input type="radio">
+                                <label for="option1">Option 1</label>
+                                <input type="radio" checked>
+                                <label for="option2">Option 2</label>
+                            </div>
+                            <h6 class="mt-3">Checkbox</h6>
+                            <div class="checks">
+                                <input type="checkbox">
+                                <label for="check1">Check 1</label>
+                                <input type="checkbox" checked>
+                                <label for="check2">Check 2</label>
+                            </div>
+                            <h6 class="mt-3">Snackbar</h6>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="snacks1 d-flex ingrp">
+                                            <img src="./images/error-icon.svg" alt="" class="snackimg ms-2">
+                                            <p class="ms-2 mt-2">This is an error Message</p>
+                                        </div>
+                                        <div class="snacks2 d-flex mt-3">
+                                            <img src="./images/warning-icon.svg" alt="" class="snackimg ms-2">
+                                            <p class="ms-2 mt-2">This is a warning Message!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="snacks3 d-flex ingrp">
+                                            <img src="./images/info-icon.svg" alt="" class="snackimg ms-2">
+                                            <p class="ms-2 mt-2">This is an information Message!</p>
+                                        </div>
+                                        <div class="snacks4 d-flex mt-3">
+                                            <img src="./images/success-icon.svg" alt="" class="snackimg ms-2">
+                                            <p class="ms-2 mt-2">This is a Success Message!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action mt-3">
+                                <h5>Call to action</h5>
+                                <div class="actionbtn d-flex mt-3">
+                                    <button class="btn btn-danger" style="border-radius: 18px;">Primary</button>
+                                    <button class="ms-5 btn btn-outline-danger" style="border-radius: 18px;">Secondary</button>
+                                </div>
+                            </div>
+                            <h5 class="mt-4">Tabs</h5>
+                            <div class="tabbtn d-flex mt-1">
+                                <button type="button" class="ms-2"  id="button1" style="color: red;" onclick="FirstTab()">Tab 1</button>
+                <button type="button" id="button2" class="ms-5" onclick="SecondtTab()">Tab 2</button>
+                <button type="button" id="button3" class="ms-5" onclick="ThirdTab()">Tab 3</button>
+                              
+                            </div>
+                         
 
-              <div id="checkbox"> <span>Checkbox</span> </div>
-
-              <form class="form-group">
-               
-                <div id="checkbox-option">
-
-                <span id="option-1"><input type="checkbox" name="option 1" > option 1</span>
-                <span id="option-2"><input type="checkbox" name="option 2" checked  > option 2</span>
-
-
+                            <div class="tab-content">
+                                <span id="tab1-content" style="display:block;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</span>
+                                <span id="tab2-content" style="display: none;">Tab 2 Content</span>
+                                <span id="tab3-content" style="display: none;">Tab 3 Content</span>
+                              </div>
+                            
+                        </div>
+                    </div>
                 </div>
-
-              </form>
-               
-              <div id="snackbar"> <span>Snackbar</span> </div>
-
-              <div class="row">
-                <div class="col">
-                    <div id="error-message"><span><img src="images/error-icon.svg" id="error-icon"></span><span id="error-txt">This is an error Message</span></div>
-                </div>
-
-                <div class="col">
-                    <div id="info-message"><span><img src="images/info-icon.svg" id="info-icon"></span><span id="info-txt">This is an information Message</span></div>
-                </div>
-
-              </div>
-
-              <div class="row">
-                <div class="col">
-                    <div id="warning-message"><span><img src="images/warning-icon.svg" id="warning-icon"></span><span id="warning-txt">This is a warning Message</span></div>
-                </div>
-
-                <div class="col">
-                    <div id="success-message"><span><img src="images/success-icon.svg" id="success-icon"></spam><span id="success-txt">This is a success Message</span></div>
-                </div>
-
-              </div>
-
-              <div id="calltoaction"> <span>Call to action</span> </div>
-
-              <div id="coltoaction-button">
-                <span id="pri"><input type="button"name="primary" value="Primary" id="primary"></span>
-                <span id="sec" ><input type="button"name="secondry" value="Secondry" id="secondry"></span>
-              </div>
-
-              <div id="tab"> <span>Tab</span> </div>
-
-              <div class="tab-title">
-
-                <button type="button"  id="button1" style="color: red;" onclick="FirstTab()">Tab 1</button>
-                <button type="button" id="button2" onclick="SecondtTab()">Tab 2</button>
-                <button type="button" id="button3" onclick="ThirdTab()">Tab 3</button>
-              </div>           
-              
-              <div class="tab-content">
-                <span id="tab1-content" style="display:block;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</span>
-                <span id="tab2-content" style="display: none;">Tab 2 Content</span>
-                <span id="tab3-content" style="display: none;">Tab 3 Content</span>
-              </div>
-              
-
-
-            
-
-              
-
+            </div>
         </div>
+      </div>
     </div>
+  </div>
+
 
 </body>
-
 </html>
